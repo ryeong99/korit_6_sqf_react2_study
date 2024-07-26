@@ -8,6 +8,11 @@ import DeletePage from "./pages/basic/DeletePage";
 import MainLayout from "./components/MainLayout/MainLayout";
 import Sidebar from "./components/Sidebar/Sidebar";
 import MainContainer from "./components/MainContainer/MainContainer";
+import PromisePage from "./pages/basic/PromisePage";
+import PostPage2 from "./pages/basic/PostPage2";
+import RegisterSizePage from "./pages/basic/RegisterSizePage";
+import RegisterColorPage from "./pages/basic/RegisterColorPage";
+import ComputerPage from "./pages/basic/ComputerPage";
 
 function App() {
   return (
@@ -21,6 +26,12 @@ function App() {
             <Route path="/async/basic/get" element={<GetPage />} />
             <Route path="/async/basic/put" element={<PutPage />} />
             <Route path="/async/basic/delete" element={<DeletePage />} />
+            <Route path="/async/basic/post2" element={<PostPage2 />} />
+            <Route path="/async/basic/promise" element={<PromisePage />} />
+            <Route path="/async/size/register" element={<RegisterSizePage />} />
+            <Route path="/async/color/register" element={<RegisterColorPage />} />
+            <Route path="/computer" element={<ComputerPage />} />
+            
           </Routes>
         </MainContainer>
       </MainLayout>
